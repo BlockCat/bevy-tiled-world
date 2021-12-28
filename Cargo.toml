@@ -1,0 +1,21 @@
+[package]
+name = "bevy-tiled-world"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+tiled = { git = "https://github.com/BlockCat/rs-tiled" }
+anyhow = "1.0.52"
+path-dedot = "3.0.14"
+futures = "0.3.19"
+
+serde = { version = "1.0.132", features = ["derive"]}
+serde_json = "1.0.73"
+
+# Bevy dependencies
+bevy = { version = "0.5.0" }
+bevy_tilemap = "0.4.0"
+bevy_tilemap_types = "0.4.0"
